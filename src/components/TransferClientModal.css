@@ -1,0 +1,224 @@
+/* Transfer Modal Overlay */
+.transfer-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.transfer-modal-container {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 550px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #253C54;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 2rem;
+}
+
+.client-info {
+  background-color: #F0F7F5;
+  border: 2px solid #2DCEA3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.client-info h3 {
+  color: #253C54;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.client-info p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.modal-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Form */
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #253C54;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  padding: 0.875rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #F8F8F8;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2DCEA3;
+  background-color: white;
+}
+
+.no-users-message {
+  color: #666;
+  font-style: italic;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #FFE5E5;
+  color: #D32F2F;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #FFCDD2;
+}
+
+/* Warning Box */
+.warning-box {
+  background-color: #FFF4E5;
+  border: 2px solid #FF9800;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.warning-box strong {
+  color: #E65100;
+}
+
+.warning-box div {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.cancel-btn,
+.transfer-btn {
+  flex: 1;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #666;
+  border: 2px solid #E0E0E0;
+}
+
+.cancel-btn:hover {
+  background-color: #F5F5F5;
+}
+
+.transfer-btn {
+  background-color: #FF9800;
+  color: white;
+}
+
+.transfer-btn:hover {
+  background-color: #F57C00;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transfer-modal-container {
+    max-height: 95vh;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

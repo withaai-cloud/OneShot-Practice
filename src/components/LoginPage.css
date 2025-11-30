@@ -1,0 +1,207 @@
+/* Login Page Styles */
+.login-page {
+  min-height: 100vh;
+  background-color: #253C54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-container {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  width: 100%;
+  padding: 3rem;
+}
+
+/* Logo */
+.login-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Form Container */
+.login-form-container h2 {
+  color: #253C54;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #253C54;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  padding: 0.875rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #F8F8F8;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2DCEA3;
+  background-color: white;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #FFE5E5;
+  color: #D32F2F;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #FFCDD2;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #2DCEA3;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.login-button:hover {
+  background-color: #1D7A69;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Demo Info */
+.demo-info {
+  background-color: #F0F7F5;
+  border: 1px solid #2DCEA3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.demo-title {
+  font-weight: 700;
+  color: #253C54;
+  margin-bottom: 0.5rem;
+}
+
+.demo-info p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+.demo-info strong {
+  color: #253C54;
+}
+
+/* Back Button */
+.back-button {
+  background-color: transparent;
+  color: #2DCEA3;
+  border: 2px solid #2DCEA3;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2DCEA3;
+  color: white;
+}
+
+/* Register Link */
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #F0F0F0;
+}
+
+.register-link p {
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.register-link-button {
+  background-color: #253C54;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-link-button:hover {
+  background-color: #1a2d3f;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-logo img {
+    height: 50px;
+  }
+
+  .login-form-container h2 {
+    font-size: 1.75rem;
+  }
+}

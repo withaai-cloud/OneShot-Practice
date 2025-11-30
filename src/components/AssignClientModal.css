@@ -1,0 +1,274 @@
+/* Assign Modal Overlay */
+.assign-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.assign-modal-container {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #253C54;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Practice Users Suggestions */
+.practice-users-suggestions {
+  background-color: #F0F7F5;
+  border: 2px solid #2DCEA3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.suggestions-title {
+  font-weight: 700;
+  color: #253C54;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.suggestion-btn {
+  background-color: white;
+  border: 2px solid #2DCEA3;
+  color: #253C54;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.suggestion-btn:hover:not(:disabled) {
+  background-color: #2DCEA3;
+  color: white;
+}
+
+.suggestion-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #E0E0E0;
+  border-color: #CCC;
+}
+
+/* Add User Form */
+.add-user-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.875rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #2DCEA3;
+}
+
+.add-btn {
+  background-color: #2DCEA3;
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background-color: #1D7A69;
+}
+
+/* Assigned Users List */
+.assigned-users-list {
+  margin-top: 2rem;
+}
+
+.assigned-users-list h3 {
+  color: #253C54;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  border: 2px solid #E0E0E0;
+  transition: all 0.3s ease;
+}
+
+.user-item:hover {
+  border-color: #2DCEA3;
+  background-color: #F0F7F5;
+}
+
+.user-email {
+  color: #253C54;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background-color: #FF4444;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.remove-btn:hover {
+  background-color: #CC0000;
+  transform: scale(1.1);
+}
+
+/* No Users State */
+.no-users {
+  text-align: center;
+  padding: 2rem;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.no-users p {
+  color: #666;
+  font-style: italic;
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid #F0F0F0;
+}
+
+.modal-actions .cancel-btn,
+.modal-actions .save-btn {
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.modal-actions .cancel-btn {
+  background-color: transparent;
+  color: #666;
+  border: 2px solid #E0E0E0;
+}
+
+.modal-actions .cancel-btn:hover {
+  background-color: #F5F5F5;
+}
+
+.modal-actions .save-btn {
+  background-color: #2DCEA3;
+  color: white;
+}
+
+.modal-actions .save-btn:hover {
+  background-color: #1D7A69;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .assign-modal-container {
+    max-height: 90vh;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .add-user-form {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .modal-actions .cancel-btn,
+  .modal-actions .save-btn {
+    width: 100%;
+  }
+}
